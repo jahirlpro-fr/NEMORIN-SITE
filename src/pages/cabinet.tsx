@@ -53,7 +53,7 @@ export default function CabinetPage() {
       />
 
       {/* Hero Section */}
-          <section className="relative bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
+          <section className="relative bg-primary text-white pt-32 pb-20 md:pt-40 md:pb-28">
               <div className="container-custom max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -177,9 +177,9 @@ export default function CabinetPage() {
 
       {/* Modes de Paiement */}
       <section className="bg-white py-section-mobile md:py-section">
-        <div className="container-custom max-w-4xl">
-          <SectionTitle
-            label="MODES DE PAIEMENT"
+              <div className="container-custom max-w-4xl mx-auto text-center">
+                  <SectionTitle
+                      label="MODES DE PAIEMENT"
             title="Flexibilité et Simplicité"
             align="center"
           />
@@ -212,9 +212,9 @@ export default function CabinetPage() {
 
       {/* Zone d'Intervention */}
       <section className="bg-bg-alt py-section-mobile md:py-section">
-        <div className="container-custom max-w-4xl">
-          <SectionTitle
-            label="ZONE D'INTERVENTION"
+              <div className="container-custom max-w-4xl mx-auto">
+                  <SectionTitle
+                      label="ZONE D'INTERVENTION"
             title="Paris, France et International"
             align="center"
           />
