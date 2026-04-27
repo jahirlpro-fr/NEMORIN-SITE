@@ -46,10 +46,10 @@ export default function NotFound() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link href="/">
-              <Button content="Retour à l'accueil" variant="primary" />
+              <Button variant="primary">Retour à l'accueil</Button>
             </Link>
             <Link href="/contact">
-              <Button content="Nous contacter" variant="secondary" className="border-white/20 text-white hover:bg-white hover:text-navy" />
+              <Button variant="secondary" className="border-white/20 text-white hover:bg-white hover:text-navy">Nous contacter</Button>
             </Link>
           </motion.div>
         </div>

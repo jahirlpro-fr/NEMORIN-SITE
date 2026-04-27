@@ -2,6 +2,8 @@ export const siteConfig = {
   name: "Cabinet Maître Stéphanie NEMORIN",
   legalName: "Maître Stéphanie NEMORIN",
   title: "Avocate au Barreau de Paris",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://nemorin-avocat.fr",
+  description: "Cabinet d'avocats à Paris 16e spécialisé en droit des affaires, droit pénal des affaires, droit des sociétés et droit immobilier.",
   
   bar: {
     name: "Barreau de Paris",
