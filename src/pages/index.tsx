@@ -1,12 +1,29 @@
-import React from 'react'
+import { HeroSection } from "@/components/home/HeroSection";
+import { TrustBadges } from "@/components/home/TrustBadges";
+import { WhyNemorin } from "@/components/home/WhyNemorin";
+import { ExpertisePreview } from "@/components/home/ExpertisePreview";
+import { HowItWorks } from "@/components/home/HowItWorks";
+import { StatsSection } from "@/components/home/StatsSection";
+import { TestimonialsSlider } from "@/components/home/TestimonialsSlider";
+import { CtaBanner } from "@/components/home/CtaBanner";
+import { GoldDivider } from "@/components/shared/GoldDivider";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background flex items-center justify-center">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-foreground">Hello World</h1>
-        <p className="text-lg text-muted-foreground">This is going to be your softgen app, start by describing your project.</p>
-      </div>
-    </main>
-  )
+    <>
+      <HeroSection />
+      <TrustBadges />
+      <GoldDivider />
+      <WhyNemorin />
+      <GoldDivider />
+      <ExpertisePreview />
+      <GoldDivider />
+      <HowItWorks />
+      <StatsSection />
+      <GoldDivider />
+      <TestimonialsSlider />
+      <GoldDivider />
+      <CtaBanner />
+    </>
+  );
 }
