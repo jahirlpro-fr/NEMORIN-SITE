@@ -1,14 +1,4 @@
-Parfait, bonne décision ! Le code est déjà protégé par le `if (process.env.RESEND_API_KEY)` donc si la clé n'est pas dans le `.env.local`, les emails sont simplement ignorés sans erreur. **Rien ne bloque.** ✅
 
-On attaque le README directement !
-
----
-
-## FICHIER 7 — Créer `README.md`
-
-**Action :** Crée le fichier `README.md` à la **racine du projet** et colle ce contenu :
-
-```markdown
 # Cabinet Maître Stéphanie NEMORIN — Site Vitrine
 
 Site vitrine professionnel pour Maître Stéphanie NEMORIN, Avocate au Barreau de Paris (toque E1119), spécialisée en droit des affaires, droit pénal des affaires et droit des sociétés.
@@ -274,7 +264,3 @@ L'architecture blog est prévue pour la V2. Pour l'activer :
 
 Projet privé — © 2024 Maître Stéphanie NEMORIN. Tous droits réservés.
 ```
-
----
-
-Dis-moi quand c'est fait, on finit avec le `vercel.json` et on aura terminé ! 🏁
