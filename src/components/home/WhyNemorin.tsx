@@ -5,7 +5,7 @@ import { Scale, Users, Heart } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
 
-const arguments = [
+const reasons = [
   {
     number: "01",
     icon: Scale,
@@ -38,7 +38,7 @@ export function WhyNemorin() {
 
         <AnimatedSection className="mt-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {arguments.map((arg, index) => {
+            {reasons.map((arg, index) => {
               const Icon = arg.icon;
               return (
                 <motion.div
