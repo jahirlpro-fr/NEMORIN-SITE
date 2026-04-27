@@ -43,7 +43,7 @@ export function HowItWorks() {
         <AnimatedSection className="mt-16">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative pt-10">
                       {/* Connecting line (desktop only) */}
-                      <div className="hidden md:block absolute top-[72px] left-[10%] right-[10%] h-px bg-gold opacity-30" />
+                      <div className="hidden md:block absolute top-[72px] left-[16.5%] right-[16.5%] h-px bg-gold opacity-30" />
 
             {steps.map((step, index) => {
               const Icon = step.icon;
