@@ -29,14 +29,11 @@ export function Header() {
     }, [isMobileMenuOpen]);
 
     return (
-        <header
-            className={`fixed top-0 ...`}
-            onClick={(e) => {
-                if (!(e.target as HTMLElement).closest('.dropdown-trigger')) {
-                    setOpenDropdown(null);
-                }
-            }}
-        >
+<header
+    className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-primary shadow-md" : "bg-bg/95 backdrop-blur-sm shadow-sm"
+    }`}
+>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex flex-col group">
