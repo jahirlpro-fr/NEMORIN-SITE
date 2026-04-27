@@ -155,7 +155,7 @@ export function Header() {
                 
                   href="tel:+33671610623"
                   className="flex items-center gap-2 py-3 text-white hover:text-gold transition-colors font-medium border-b border-white/10"
-                >
+            >
                   <Phone className="w-4 h-4" strokeWidth={1.5} />
                   06 71 61 06 23
                 </a>
