@@ -53,7 +53,7 @@ export default function CabinetPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
+          <section className="relative bg-primary text-white pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -61,13 +61,13 @@ export default function CabinetPage() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <p className="text-montserrat text-xs md:text-sm tracking-[0.15em] uppercase text-gold mb-4">
-              LE CABINET
-            </p>
-            <h1 className="text-cormorant text-4xl md:text-6xl font-light mb-6">
-              Un Cabinet à Taille Humaine au Cœur de Paris
-            </h1>
-            <p className="text-dm-sans text-lg md:text-xl text-white/80 leading-relaxed">
+                      <p className="font-label text-xs md:text-sm tracking-[0.15em] uppercase text-gold mb-4">
+                          LE CABINET
+                      </p>
+                      <h1 className="font-display text-4xl md:text-6xl font-light text-white mb-6">
+                          Un Cabinet à Taille Humaine au Cœur de Paris
+                      </h1>
+                      <p className="font-body text-lg md:text-xl text-white/80 leading-relaxed">
               Maître Stéphanie NEMORIN vous accompagne personnellement, du premier rendez-vous jusqu'à la résolution de votre dossier, avec rigueur, discrétion et disponibilité.
             </p>
           </motion.div>
