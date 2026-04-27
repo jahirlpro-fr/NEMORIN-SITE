@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Playfair_Display, DM_Sans, Montserrat } from "next/
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
+import { ScrollProgressBar } from "@/components/shared/ScrollProgressBar";
 import { SchemaMarkup } from "@/components/shared/SchemaMarkup";
 import "@/styles/globals.css";
 
@@ -37,8 +38,9 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${cormorant.variable} ${playfair.variable} ${dmSans.variable} ${montserrat.variable}`}>
-      <SchemaMarkup />
-      <Header />
+          <SchemaMarkup />
+          <ScrollProgressBar />
+          <Header />
       <main className="min-h-screen pt-20">
         <Component {...pageProps} />
       </main>
