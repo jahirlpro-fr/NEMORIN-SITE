@@ -53,16 +53,24 @@ export function Header() {
                     key={link.href}
                     className="relative"
                 >
-                    <button
-                        onClick={() => link.subLinks && setOpenDropdown(openDropdown === link.label ? null : link.label)}
-                        className={`font-body text-sm font-medium transition-colors flex items-center gap-1 ${isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
-                            }`}
-                    >
-                        {link.label}
-                        {link.subLinks && (
+                    {link.subLinks ? (
+                        <button
+                            onClick={() => setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                            className={`font-body text-sm font-medium transition-colors flex items-center gap-1 ${isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
+                                }`}
+                        >
+                            {link.label}
                             <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
-                        )}
-                    </button>
+                        </button>
+                    ) : (
+                        <Link
+                            href={link.href}
+                            className={`font-body text-sm font-medium transition-colors ${isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
+                                }`}
+                        >
+                            {link.label}
+                        </Link>
+                    )}
                 {link.subLinks && openDropdown === link.label && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl border border-border py-2 z-50">
                     {link.subLinks.map((subLink) => (
