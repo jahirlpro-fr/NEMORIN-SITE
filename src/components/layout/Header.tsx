@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { mainNavigation } from "@/data/navigation";
 import { Button } from "@/components/shared/Button";
 
@@ -31,24 +31,22 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-primary shadow-md"
-          : "bg-transparent"
-      }`}
+          className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+                  ? "bg-primary shadow-md"
+                  : "bg-bg/95 backdrop-blur-sm shadow-sm"
+              }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex flex-col group">
-            <span className={`font-display text-2xl font-semibold transition-colors ${
-              isScrolled ? "text-gold" : "text-gold"
-            }`}>
-              NEMORIN
-            </span>
-            <span className="label-caps text-[0.65rem] text-gold-light opacity-80">
-              Avocate au Barreau de Paris
-            </span>
+                      <span className="font-display text-2xl font-semibold text-gold">
+                          NEMORIN
+                      </span>
+                      <span className={`label-caps text-[0.65rem] transition-colors ${isScrolled ? "text-gold-light opacity-80" : "text-primary opacity-70"
+                          }`}>
+                          Avocate au Barreau de Paris
+                      </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -62,9 +60,8 @@ export function Header() {
               >
                 <Link
                   href={link.href}
-                  className={`font-body text-sm font-medium transition-colors relative group flex items-center gap-1 ${
-                    isScrolled ? "text-white hover:text-gold" : "text-white hover:text-gold"
-                  }`}
+                        className={`font-body text-sm font-medium transition-colors relative group flex items-center gap-1 ${isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
+                            }`}
                 >
                   {link.label}
                   {link.subLinks && (
@@ -115,9 +112,19 @@ export function Header() {
               <span className="text-gold-light/40">|</span>
               <span className="hover:text-gold transition-colors cursor-pointer opacity-60">ES</span>
             </div>
-            <Button href="/contact" variant="primary">
-              Prendre RDV
-            </Button>
+                      <div className="flex items-center gap-3">
+
+                          href="tel:+33671610623"
+                          className={`hidden xl:flex items-center gap-2 font-body text-sm font-medium transition-colors hover:text-gold ${isScrolled ? "text-white" : "text-primary"
+                              }`}
+  >
+                          <Phone className="w-4 h-4" strokeWidth={1.5} />
+                          06 71 61 06 23
+                      </a>
+                      <Button href="/contact" variant="primary">
+                          Prendre RDV
+                      </Button>
+                  </div>
           </div>
 
           {/* Mobile Menu Button */}
