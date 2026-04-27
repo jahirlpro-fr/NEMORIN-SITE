@@ -35,7 +35,7 @@ export function TestimonialsSlider() {
           </div>
 
           {/* Testimonial content */}
-          <div className="relative min-h-[280px] flex items-center justify-center">
+                  <div className="relative min-h-[280px] flex items-center justify-center pt-12">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -46,12 +46,12 @@ export function TestimonialsSlider() {
                 className="text-center max-w-3xl"
               >
                 {/* Quote */}
-                <blockquote className="font-display font-light text-2xl md:text-3xl text-text italic leading-relaxed mb-8">
-                  "{current.quote}"
-                </blockquote>
+                              <blockquote className="font-display font-light text-2xl md:text-3xl text-text italic leading-relaxed mb-12">
+                                  "{current.quote}"
+                              </blockquote>
 
-                {/* Author */}
-                <div className="space-y-1">
+                              {/* Author */}
+                              <div className="space-y-2 mb-8">
                   <p className="font-body font-medium text-primary">
                     {current.name}
                   </p>
