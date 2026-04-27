@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/shared/Breadcrumb";
 import { GoldDivider } from "@/components/shared/GoldDivider";
 import { Button } from "@/components/shared/Button";
 import { expertises, getExpertiseBySlug, type Expertise } from "@/data/expertises";
-import { faqByExpertise, type FAQByExpertise } from "@/data/faq";
+import { faqByDomain, type FAQItem } from "@/data/faq";
 import {
   Accordion,
   AccordionContent,
@@ -16,10 +16,10 @@ import {
 
 interface ExpertisePageProps {
   expertise: Expertise;
-  faq: FAQByExpertise | null;
+  faqItems: FAQItem[];
 }
 
-export default function ExpertisePage({ expertise, faq }: ExpertisePageProps) {
+export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProps) {
   const IconComponent = LucideIcons[expertise.iconName as keyof typeof LucideIcons] as React.ComponentType<{ className?: string; strokeWidth?: number }>;
 
   // JSON-LD Schema for LegalService
@@ -242,7 +242,7 @@ export default function ExpertisePage({ expertise, faq }: ExpertisePageProps) {
       <GoldDivider />
 
       {/* FAQ Section */}
-      {faq && faq.items.length > 0 && (
+      {faqItems && faqItems.length > 0 && (
         <>
           <section className="bg-bg-alt py-section-mobile md:py-section">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -262,7 +262,7 @@ export default function ExpertisePage({ expertise, faq }: ExpertisePageProps) {
               </motion.div>
 
               <Accordion type="single" collapsible className="space-y-4">
-                {faq.items.map((item, index) => (
+                {faqItems.map((item, index) => (
                   <AccordionItem
                     key={index}
                     value={`item-${index}`}
@@ -333,12 +333,12 @@ export const getStaticProps: GetStaticProps<ExpertisePageProps> = async ({ param
     };
   }
 
-  const faq = faqByExpertise.find((f) => f.slug === slug) || null;
+  const faqItems = faqByDomain[slug] || [];
 
   return {
     props: {
       expertise,
-      faq,
+      faqItems,
     },
   };
 };
