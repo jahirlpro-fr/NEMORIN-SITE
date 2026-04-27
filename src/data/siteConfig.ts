@@ -11,18 +11,21 @@ export const siteConfig = {
     registeredSince: "Mars 2019",
   },
   
-  contact: {
-    address: {
-      street: "[ADRESSE EXACTE]", // À compléter avec l'adresse réelle
-      city: "Paris",
-      postalCode: "75116",
-      country: "France",
-      countryCode: "FR",
+    contact: {
+        address: {
+            street: "49 Avenue Victor Hugo",
+            city: "Paris",
+            postalCode: "75116",
+            country: "France",
+            countryCode: "FR",
+        },
+        phone: "+33 6 71 61 06 23",
+        phoneDisplay: "06 71 61 06 23",
+        phoneHref: "tel:+33671610623",
+        email: "cabinet@nemorin-avocat.com",
+        emailSecondary: "stephanie.nemorin-avocat@hotmail.com",
+        hours: "Lundi–Vendredi 9h–19h (sur rendez-vous)",
     },
-    phone: "[TÉLÉPHONE]", // Format: +33 1 XX XX XX XX
-    email: "[EMAIL]", // contact@nemorin-avocat.fr
-    hours: "Lundi–Vendredi 9h–19h (sur rendez-vous)",
-  },
   
   geo: {
     latitude: 48.8712073,
@@ -35,9 +38,9 @@ export const siteConfig = {
     { code: "es", name: "Espagnol", level: "Courant" },
   ],
   
-  social: {
-    linkedin: "[URL LINKEDIN]", // https://www.linkedin.com/in/...
-  },
+    social: {
+        linkedin: "https://www.linkedin.com/in/st%C3%A9phanie-nemorin-avocat/",
+    },
   
   education: [
     {
@@ -72,10 +75,10 @@ export const siteConfig = {
     twitterHandle: "@nemorin_avocat", // Si applicable
   },
   
-  legal: {
-    siret: "[SIRET]", // À compléter
-    tva: "[TVA INTRACOMMUNAUTAIRE]", // À compléter
-  },
+    legal: {
+        siret: "", // À compléter quand disponible
+        tva: "",   // À compléter quand disponible
+    },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
