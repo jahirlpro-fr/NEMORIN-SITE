@@ -29,11 +29,14 @@ export function Header() {
     }, [isMobileMenuOpen]);
 
     return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-primary shadow-md" : "bg-bg/95 backdrop-blur-sm shadow-sm"
-      }`}
-    >
+        <header
+            className={`fixed top-0 ...`}
+            onClick={(e) => {
+                if (!(e.target as HTMLElement).closest('.dropdown-trigger')) {
+                    setOpenDropdown(null);
+                }
+            }}
+        >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex flex-col group">
@@ -49,23 +52,20 @@ export function Header() {
 
           <nav className="hidden lg:flex items-center gap-8">
             {mainNavigation.map((link) => (
-              <div
-                key={link.href}
-                className="relative"
-                onMouseEnter={() => link.subLinks && setOpenDropdown(link.label)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
-                <Link
-                  href={link.href}
-                  className={`font-body text-sm font-medium transition-colors relative group flex items-center gap-1 ${
-                    isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
-                  }`}
+                <div
+                    key={link.href}
+                    className="relative"
                 >
-                  {link.label}
-                  {link.subLinks && (
-                    <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
-                  )}
-                </Link>
+                    <button
+                        onClick={() => link.subLinks && setOpenDropdown(openDropdown === link.label ? null : link.label)}
+                        className={`font-body text-sm font-medium transition-colors flex items-center gap-1 ${isScrolled ? "text-white hover:text-gold" : "text-primary hover:text-gold"
+                            }`}
+                    >
+                        {link.label}
+                        {link.subLinks && (
+                            <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === link.label ? "rotate-180" : ""}`} />
+                        )}
+                    </button>
                 {link.subLinks && openDropdown === link.label && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-xl border border-border py-2 z-50">
                     {link.subLinks.map((subLink) => (
