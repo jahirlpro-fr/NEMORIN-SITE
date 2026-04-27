@@ -41,9 +41,9 @@ export function HowItWorks() {
         />
 
         <AnimatedSection className="mt-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative">
-            {/* Connecting line (desktop only) */}
-            <div className="hidden md:block absolute top-16 left-0 right-0 h-0.5 bg-gold opacity-30" />
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 relative pt-10">
+                      {/* Connecting line (desktop only) */}
+                      <div className="hidden md:block absolute top-[72px] left-[10%] right-[10%] h-px bg-gold opacity-30" />
 
             {steps.map((step, index) => {
               const Icon = step.icon;
@@ -58,7 +58,7 @@ export function HowItWorks() {
                   className="relative text-center"
                 >
                   {/* Number badge */}
-                  <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-gold rounded-full mb-6">
+                      <div className="relative z-10 inline-flex items-center justify-center w-16 h-16 bg-gold rounded-full mb-8 mt-2">
                     <span className="font-display text-2xl font-semibold text-primary">
                       {step.number}
                     </span>
