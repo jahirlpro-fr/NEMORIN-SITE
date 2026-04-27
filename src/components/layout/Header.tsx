@@ -150,14 +150,12 @@ export function Header() {
                   </div>
                 ))}
                 
-                  href="tel:+33671610623"
-                  className="flex items-center gap-2 py-3 text-white hover:text-gold transition-colors font-medium border-b border-white/10"
-            >
-                  <Phone className="w-4 h-4" strokeWidth={1.5} />
-                  06 71 61 06 23
-                </a>
-                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
-                  <span className="text-xs text-gold-light">Langues :</span>
+                                <a href="tel:+33671610623" className="flex items-center gap-2 py-3 text-white hover:text-gold transition-colors font-medium border-b border-white/10">
+                                    <Phone className="w-4 h-4" strokeWidth={1.5} />
+                                    06 71 61 06 23
+                                </a>
+                                <div className="flex items-center gap-3 pt-4 border-t border-white/10">
+                                    <span className="text-xs text-gold-light">Langues :</span>
                   <div className="flex items-center gap-2 text-sm">
                     <span className="text-gold">FR</span>
                     <span className="text-gold-light/40">|</span>
