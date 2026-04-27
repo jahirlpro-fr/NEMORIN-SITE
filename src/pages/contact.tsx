@@ -67,8 +67,8 @@ export default function ContactPage() {
                     <div>
                       <p className="text-dm-sans text-sm font-medium text-navy mb-1">Adresse</p>
                       <p className="text-dm-sans text-sm text-text-muted">
-                        {siteConfig.address.street}<br />
-                        {siteConfig.address.postalCode} {siteConfig.address.city}
+                        {siteConfig.contact.address.street}<br />
+                        {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}
                       </p>
                     </div>
                   </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-dm-sans text-sm font-medium text-navy mb-1">Horaires</p>
                       <p className="text-dm-sans text-sm text-text-muted">
-                        {siteConfig.hours.weekdays}<br />
+                        {siteConfig.contact.hours}<br />
                         <span className="text-xs">(Sur rendez-vous)</span>
                       </p>
                     </div>
