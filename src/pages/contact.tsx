@@ -16,7 +16,7 @@ export default function ContactPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
+          <section className="relative bg-primary text-white pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -24,12 +24,12 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <p className="text-montserrat text-xs md:text-sm tracking-[0.15em] uppercase text-gold mb-4">
-              CONTACT
-            </p>
-            <h1 className="text-cormorant text-4xl md:text-6xl font-light mb-6">
-              Parlons de Votre Situation
-            </h1>
+                      <p className="font-label text-xs md:text-sm tracking-[0.15em] uppercase text-gold mb-4">
+                          CONTACT
+                      </p>
+                      <h1 className="font-display text-4xl md:text-6xl font-light text-white mb-6">
+                          Parlons de Votre Situation
+                      </h1>
             <p className="text-dm-sans text-lg md:text-xl text-white/80 leading-relaxed">
               Contactez-nous pour un premier échange confidentiel. Nous étudions chaque demande avec attention et vous répondons sous 48h ouvrées.
             </p>
