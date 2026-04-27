@@ -1,5 +1,8 @@
 import type { AppProps } from "next/app";
 import { Cormorant_Garamond, Playfair_Display, DM_Sans, Montserrat } from "next/font/google";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { CookieBanner } from "@/components/layout/CookieBanner";
 import "@/styles/globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -33,7 +36,12 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={`${cormorant.variable} ${playfair.variable} ${dmSans.variable} ${montserrat.variable}`}>
-      <Component {...pageProps} />
+      <Header />
+      <main className="min-h-screen">
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+      <CookieBanner />
     </div>
   );
 }
