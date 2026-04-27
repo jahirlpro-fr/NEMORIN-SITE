@@ -1,0 +1,18 @@
+<![CDATA[
+# robots.txt for nemorin-avocat.fr
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Site
+...
+NEMORIN
+</lastmod>
+</url>
+
+</urlset>
+Sitemap: https://nemorin-avocat.fr/sitemap.xml
+]]>
+
+[Tool result trimmed: kept first 100 chars and last 100 chars of 274 chars.]
