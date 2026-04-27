@@ -85,11 +85,10 @@ export function Header() {
 
 <div className="hidden lg:flex items-center gap-3">
             
-                        <a href="tel:+33671610623" className={`hidden xl:flex items-center gap-2 font-body text-sm font-medium transition-colors hover:text-gold ${isScrolled ? "text-white" : "text-primary"}`}>
-            >
-              <Phone className="w-4 h-4" strokeWidth={1.5} />
-              06 71 61 06 23
-            </a>
+                        <Link href="tel:+33671610623" className={`hidden xl:flex items-center gap-2 font-body text-sm font-medium transition-colors hover:text-gold ${isScrolled ? "text-white" : "text-primary"}`}>
+                            <Phone className="w-4 h-4" strokeWidth={1.5} />
+                            06 71 61 06 23
+                        </Link>
             <Button href="/contact" variant="primary">
               Prendre RDV
             </Button>
@@ -150,10 +149,10 @@ export function Header() {
                   </div>
                 ))}
                 
-                                <a href="tel:+33671610623" className="flex items-center gap-2 py-3 text-white hover:text-gold transition-colors font-medium border-b border-white/10">
+                                <Link href="tel:+33671610623" className="flex items-center gap-2 py-3 text-white hover:text-gold transition-colors font-medium border-b border-white/10">
                                     <Phone className="w-4 h-4" strokeWidth={1.5} />
                                     06 71 61 06 23
-                                </a>
+                                </Link>
                                 <div className="flex items-center gap-3 pt-4 border-t border-white/10">
                                     <span className="text-xs text-gold-light">Langues :</span>
                   <div className="flex items-center gap-2 text-sm">
