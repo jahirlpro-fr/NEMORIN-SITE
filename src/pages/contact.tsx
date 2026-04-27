@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { MapPin, Clock, Mail, Linkedin } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { SectionTitle } from "@/components/shared/SectionTitle";
@@ -86,18 +87,24 @@ export default function ContactPage() {
                   </div>
 
                   {/* Email */}
-                  <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
-                    <div>
-                      <p className="text-dm-sans text-sm font-medium text-navy mb-1">Email</p>
-                      <a
-                        href={`mailto:${siteConfig.contact.email}`}
-                        className="text-dm-sans text-sm text-gold hover:text-gold/80 transition-colors"
-                      >
-                        {siteConfig.contact.email}
-                      </a>
-                    </div>
-                  </div>
+                                  <div className="flex items-start gap-3">
+                                      <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
+                                      <div>
+                                          <p className="text-dm-sans text-sm font-medium text-navy mb-1">Email</p>
+                                          <Link
+                                              href="mailto:cabinet@nemorin-avocat.com"
+                                              className="text-dm-sans text-sm text-gold hover:text-gold/80 transition-colors block"
+                                          >
+                                              cabinet@nemorin-avocat.com
+                                          </Link>
+                                          <Link
+                                              href="mailto:stephanie.nemorin-avocat@hotmail.com"
+                                              className="text-dm-sans text-sm text-gold hover:text-gold/80 transition-colors block mt-1"
+                                          >
+                                              stephanie.nemorin-avocat@hotmail.com
+                                          </Link>
+                                      </div>
+                                  </div>
 
                   {/* LinkedIn */}
                   <div className="flex items-start gap-3">
@@ -105,7 +112,7 @@ export default function ContactPage() {
                     <div>
                       <p className="text-dm-sans text-sm font-medium text-navy mb-1">LinkedIn</p>
                       <a
-                        href={siteConfig.social.linkedin}
+                                              href="https://www.linkedin.com/in/st%C3%A9phanie-nemorin-272495143/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-dm-sans text-sm text-gold hover:text-gold/80 transition-colors"
@@ -128,9 +135,9 @@ export default function ContactPage() {
               </div>
 
               {/* Confidentiality Note */}
-              <div className="bg-navy text-white p-6">
-                <p className="text-dm-sans text-sm leading-relaxed">
-                  <span className="font-semibold">Confidentialité assurée.</span> Tous vos échanges sont protégés par le secret professionnel de l'avocat.
+                          <div className="bg-gold/10 border border-gold/30 p-6">
+                              <p className="text-dm-sans text-sm leading-relaxed text-primary">
+                                  <span className="font-semibold">Confidentialité assurée.</span> Tous vos échanges sont protégés par le secret professionnel de l'avocat.
                 </p>
               </div>
             </div>
