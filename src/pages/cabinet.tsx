@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale, Shield, FileText, DollarSign, MapPin, Heart, CheckCircle } from "lucide-react";
+import { Scale, Shield, FileText, Euro, MapPin, Heart, CheckCircle } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { AnimatedSection } from "@/components/shared/AnimatedSection";
@@ -9,9 +9,9 @@ import { GoldDivider } from "@/components/shared/GoldDivider";
 import { Button } from "@/components/shared/Button";
 
 const honorairesOptions = [
-  {
-    icon: DollarSign,
-    title: "Taux horaire",
+    {
+        icon: Euro,
+        title: "Taux horaire",
     description: "Facturation transparente à l'heure pour les consultations et le suivi de dossiers. Un devis précis vous est systématiquement communiqué.",
   },
   {
@@ -53,8 +53,8 @@ export default function CabinetPage() {
       />
 
       {/* Hero Section */}
-          <section className="relative bg-primary text-white pt-32 pb-20 md:pt-40 md:pb-28">
-        <div className="container-custom">
+          <section className="relative bg-navy text-white pt-32 pb-20 md:pt-40 md:pb-28">
+              <div className="container-custom max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -185,7 +185,7 @@ export default function CabinetPage() {
           />
 
           <AnimatedSection className="mt-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center max-w-3xl mx-auto">
               {[
                 { label: "Chèque", icon: "✓" },
                 { label: "Virement bancaire", icon: "✓" },
@@ -281,9 +281,9 @@ export default function CabinetPage() {
                     transition={{ delay: index * 0.1 }}
                     className="text-center"
                   >
-                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gold/10 border border-gold/30 mb-4">
-                      <Icon className="w-8 h-8 text-gold" strokeWidth={1.5} />
-                    </div>
+                        <div className="inline-flex items-center justify-center mb-6">
+                            <Icon className="w-10 h-10 text-gold" strokeWidth={1} />
+                        </div>
                     <h3 className="text-playfair text-xl font-semibold text-navy mb-3">
                       {value.title}
                     </h3>
