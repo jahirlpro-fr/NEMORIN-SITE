@@ -83,12 +83,10 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
+<div className="hidden lg:flex items-center gap-3">
             
               href="tel:+33671610623"
-              className={`hidden xl:flex items-center gap-2 font-body text-sm font-medium transition-colors hover:text-gold ${
-                isScrolled ? "text-white" : "text-primary"
-              }`}
+              className={`hidden xl:flex items-center gap-2 font-body text-sm font-medium transition-colors hover:text-gold ${isScrolled ? "text-white" : "text-primary"}`}
             >
               <Phone className="w-4 h-4" strokeWidth={1.5} />
               06 71 61 06 23
