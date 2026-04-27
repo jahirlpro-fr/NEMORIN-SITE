@@ -17,7 +17,7 @@ export default function ContactPage() {
 
       {/* Hero Section */}
           <section className="relative bg-primary text-white pt-32 pb-20 md:pt-40 md:pb-28">
-        <div className="container-custom">
+              <div className="container-custom max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
