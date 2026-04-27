@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { CookieBanner } from "@/components/layout/CookieBanner";
 import { ScrollProgressBar } from "@/components/shared/ScrollProgressBar";
+import { CustomCursor } from "@/components/shared/CustomCursor";
 import { SchemaMarkup } from "@/components/shared/SchemaMarkup";
 import "@/styles/globals.css";
 
@@ -40,6 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <div className={`${cormorant.variable} ${playfair.variable} ${dmSans.variable} ${montserrat.variable}`}>
           <SchemaMarkup />
           <ScrollProgressBar />
+          <CustomCursor />
           <Header />
       <main className="min-h-screen pt-20">
         <Component {...pageProps} />
