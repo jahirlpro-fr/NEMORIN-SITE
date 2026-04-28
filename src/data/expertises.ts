@@ -189,7 +189,7 @@ export const expertises: Expertise[] = [
     title: "Droit Bancaire & Financier",
     subtitle: "Contentieux bancaire et conseil en opérations financières",
     description: "Défense et conseil en matière bancaire, financière et de crédit",
-    iconName: "Coins",
+      iconName: "Euro",
     introduction: [
       "Le droit bancaire et financier est un domaine technique qui exige une parfaite maîtrise des mécanismes juridiques et économiques. Forte de son expérience auprès d'institutionnels bancaires, Maître NEMORIN accompagne entreprises et dirigeants dans leurs relations avec les établissements financiers.",
       "Notre cabinet intervient en conseil comme en contentieux pour défendre vos intérêts face aux banques et sécuriser vos opérations de financement.",
