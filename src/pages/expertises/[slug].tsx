@@ -88,17 +88,16 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Breadcrumb */}
-              <Breadcrumb
-          items={[
-            { label: "Accueil", href: "/" },
-            { label: "Expertises", href: "/expertises" },
-            { label: expertise.title },
-          ]}
-        />
-      </div>
+          {/* Breadcrumb */}
+          <Breadcrumb
+              items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Expertises", href: "/expertises" },
+                  { label: expertise.title },
+              ]}
+          />
 
-{/* Hero Section */}
+          {/* Hero Section */}
           <section className="relative min-h-[500px] py-32 md:py-48 overflow-hidden">
   {/* Image de fond */}
   <div className="absolute inset-0 z-0">
