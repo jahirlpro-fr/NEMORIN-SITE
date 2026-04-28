@@ -100,7 +100,7 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
       </div>
 
 {/* Hero Section */}
-<section className="relative py-32 md:py-40 overflow-hidden">
+          <section className="relative min-h-[500px] py-32 md:py-48 overflow-hidden">
   {/* Image de fond */}
   <div className="absolute inset-0 z-0">
     <Image
