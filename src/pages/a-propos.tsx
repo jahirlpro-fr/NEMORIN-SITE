@@ -88,7 +88,7 @@ export default function AboutPage() {
               </div>
 
               <p className="font-body text-lg text-white/90 leading-relaxed">
-                Maître Stéphanie NEMORIN est avocate au Barreau de Paris depuis mars 2019 (toque E1119). Titulaire d'un double Master 2 en Droit des sociétés (Université de Cergy-Pontoise) et en Droit pénal des affaires (Université Paris-Est Créteil), elle a bâti son expertise au sein de cabinets parisiens de référence, notamment auprès d'institutionnels de la sphère bancaire et financière.
+                Maître Stéphanie NEMORIN est avocate au Barreau de Paris depuis mars 2019 (toque E1119). Titulaire d'un double Master 2 en Droit des sociétés et en Droit pénal des affaires, elle a bâti son expertise au sein de cabinets parisiens de référence, notamment auprès d'institutionnels de la sphère bancaire et financière.
               </p>
 
               <p className="font-body text-lg text-white/80 leading-relaxed">
