@@ -13,6 +13,17 @@ export function Header() {
     const [openDropdown, setOpenDropdown] = useState < string | null > (null);
 
     useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            if (!target.closest("nav")) {
+                setOpenDropdown(null);
+            }
+        };
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
+    }, []);
+
+    useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
