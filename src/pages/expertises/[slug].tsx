@@ -1,4 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import * as LucideIcons from "lucide-react";
 import { SEO } from "@/components/SEO";
@@ -98,42 +99,56 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
         />
       </div>
 
-      {/* Hero Section */}
-      <section className="bg-primary py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="mb-6 flex justify-center"
-          >
-            <div className="w-20 h-20 rounded-full bg-gold/20 flex items-center justify-center">
-              <IconComponent className="w-10 h-10 text-gold" strokeWidth={1.5} />
-            </div>
-          </motion.div>
+{/* Hero Section */}
+<section className="relative py-32 md:py-40 overflow-hidden">
+  {/* Image de fond */}
+  <div className="absolute inset-0 z-0">
+    <Image
+      src={`/images/expertises/banniere-${expertise.slug}.webp`}
+      alt={expertise.title}
+      fill
+      className="object-cover object-center"
+      priority
+    />
+    {/* Overlay navy semi-transparent pour lisibilité */}
+    <div className="absolute inset-0 bg-primary/75" />
+  </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-4">
-              {expertise.title}
-            </h1>
-            <p className="font-body text-xl text-gold-light">
-              {expertise.subtitle}
-            </p>
-          </motion.div>
+  {/* Contenu */}
+  <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
+      className="mb-6 flex justify-center"
+    >
+      <div className="w-20 h-20 rounded-full bg-gold/20 backdrop-blur-sm flex items-center justify-center border border-gold/30">
+        <IconComponent className="w-10 h-10 text-gold" strokeWidth={1.5} />
+      </div>
+    </motion.div>
 
-          {/* Decorative gold element */}
-          <motion.div
-            initial={{ scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="w-24 h-1 bg-gold mx-auto mt-8"
-          />
-        </div>
-      </section>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.2 }}
+    >
+      <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-4">
+        {expertise.title}
+      </h1>
+      <p className="font-body text-xl text-gold-light">
+        {expertise.subtitle}
+      </p>
+    </motion.div>
+
+    {/* Decorative gold element */}
+    <motion.div
+      initial={{ scaleX: 0 }}
+      animate={{ scaleX: 1 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+      className="w-24 h-1 bg-gold mx-auto mt-8"
+    />
+  </div>
+</section>
 
       <GoldDivider />
 
