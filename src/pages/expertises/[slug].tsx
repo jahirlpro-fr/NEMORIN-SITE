@@ -89,8 +89,8 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
       />
 
       {/* Breadcrumb */}
-      <div className="pt-20">
-        <Breadcrumb
+          <div className="absolute top-20 left-0 right-0 z-20 px-4 sm:px-6 lg:px-8">
+              <Breadcrumb
           items={[
             { label: "Accueil", href: "/" },
             { label: "Expertises", href: "/expertises" },
