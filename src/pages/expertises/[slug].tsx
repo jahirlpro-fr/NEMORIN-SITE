@@ -89,7 +89,6 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
       />
 
       {/* Breadcrumb */}
-
               <Breadcrumb
           items={[
             { label: "Accueil", href: "/" },
