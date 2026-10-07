@@ -6,31 +6,31 @@
 
 @layer base {
   :root {
-    /* Colors — Cabinet Nemorin Design System */
-    --color-primary: #0F1B2D;        /* Bleu nuit profond */
+    /* Colors — Cabinet Berger Design System */
+    --color-primary: #4A1520;        /* Bordeaux profond (sang-de-bœuf) */
     --color-gold: #C9A96E;           /* Or champagne */
     --color-gold-light: #E8D5B0;     /* Or clair — hovers */
-    --color-bg: #FAFAF8;             /* Blanc cassé */
+    --color-bg: #FAF8F6;             /* Blanc cassé chaud */
     --color-bg-alt: #F4F2EE;         /* Gris perle */
-    --color-text: #1A1A2E;           /* Anthracite */
-    --color-text-muted: #6B6B7A;     /* Gris moyen */
+    --color-text: #1F1A1A;           /* Anthracite chaud */
+    --color-text-muted: #6E6767;     /* Gris moyen chaud */
     --color-accent: #C27D5A;         /* Terracotta doux */
     --color-border: #E2DDD6;         /* Bordures subtiles */
     --color-white: #FFFFFF;
     
-    /* shadcn/ui tokens mapped to Nemorin palette */
-    --background: 48 56% 98%;        /* var(--color-bg) as HSL */
-    --foreground: 240 27% 12%;       /* var(--color-text) as HSL */
+    /* shadcn/ui tokens mapped to Berger palette */
+    --background: 30 29% 97%;        /* var(--color-bg) as HSL */
+    --foreground: 0 9% 11%;       /* var(--color-text) as HSL */
     --card: 0 0% 100%;
-    --card-foreground: 240 27% 12%;
+    --card-foreground: 0 9% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 240 27% 12%;
-    --primary: 214 44% 12%;          /* var(--color-primary) as HSL */
+    --popover-foreground: 0 9% 11%;
+    --primary: 348 56% 19%;          /* var(--color-primary) as HSL */
     --primary-foreground: 0 0% 100%;
     --secondary: 40 20% 96%;         /* var(--color-bg-alt) as HSL */
-    --secondary-foreground: 240 27% 12%;
+    --secondary-foreground: 0 9% 11%;
     --muted: 40 20% 96%;
-    --muted-foreground: 240 7% 43%;  /* var(--color-text-muted) as HSL */
+    --muted-foreground: 0 3% 42%;  /* var(--color-text-muted) as HSL */
     --accent: 18 39% 56%;            /* var(--color-accent) as HSL */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
@@ -51,9 +51,9 @@
     --spacing-section-mobile: 4rem;  /* 64px */
     
     /* Shadows — subtle elevation */
-    --shadow-sm: 0 1px 3px rgba(15, 27, 45, 0.08);
-    --shadow-md: 0 4px 12px rgba(15, 27, 45, 0.1);
-    --shadow-lg: 0 8px 24px rgba(15, 27, 45, 0.12);
+    --shadow-sm: 0 1px 3px rgba(74, 21, 32, 0.08);
+    --shadow-md: 0 4px 12px rgba(74, 21, 32, 0.1);
+    --shadow-lg: 0 8px 24px rgba(74, 21, 32, 0.12);
     
     /* Transitions */
     --transition-base: 0.3s cubic-bezier(0.22, 1, 0.36, 1);

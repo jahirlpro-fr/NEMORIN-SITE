@@ -1,7 +1,7 @@
 
-# Cabinet Maître Stéphanie NEMORIN — Site Vitrine
+# Cabinet Maître Anissa BERGER — Site Vitrine
 
-Site vitrine professionnel pour Maître Stéphanie NEMORIN, Avocate au Barreau de Paris (toque E1119), spécialisée en droit des affaires, droit pénal des affaires et droit des sociétés.
+Site vitrine professionnel pour Maître Anissa BERGER, Avocate au Barreau de Paris (toque E1119), spécialisée en droit des affaires, droit pénal des affaires et droit des sociétés.
 
 ---
 
@@ -262,5 +262,5 @@ L'architecture blog est prévue pour la V2. Pour l'activer :
 
 ## Licence
 
-Projet privé — © 2024 Maître Stéphanie NEMORIN. Tous droits réservés.
+Projet privé — © 2024 Maître Anissa BERGER. Tous droits réservés.
 ```

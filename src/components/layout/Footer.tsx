@@ -18,7 +18,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex flex-col">
               <span className="font-display text-3xl font-semibold text-gold">
-                NEMORIN
+                BERGER
               </span>
               <span className="label-caps text-[0.65rem] text-gold-light opacity-80">
                 Avocate au Barreau de Paris

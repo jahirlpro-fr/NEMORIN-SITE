@@ -27,11 +27,11 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
   const legalServiceSchema = {
     "@context": "https://schema.org",
     "@type": "LegalService",
-    "name": `${expertise.title} — Maître Stéphanie NEMORIN`,
+    "name": `${expertise.title} — Maître Anissa BERGER`,
     "description": expertise.description,
     "provider": {
       "@type": "Attorney",
-      "name": "Maître Stéphanie NEMORIN",
+      "name": "Maître Anissa BERGER",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Paris",
@@ -74,7 +74,7 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
   return (
     <>
       <SEO
-        title={`${expertise.title} — Maître Stéphanie NEMORIN, Avocate Paris`}
+        title={`${expertise.title} — Maître Anissa BERGER, Avocate Paris`}
         description={`${expertise.subtitle}. ${expertise.description} Conseil et contentieux à Paris.`}
       />
 
@@ -183,7 +183,7 @@ export default function ExpertisePage({ expertise, faqItems }: ExpertisePageProp
             className="mb-12"
           >
             <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary mb-4">
-              Quand faire appel à Maître NEMORIN ?
+              Quand faire appel à Maître BERGER ?
             </h2>
             <p className="font-body text-text-muted leading-relaxed">
               Situations typiques où notre expertise peut vous être utile :

@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        /* Nemorin Design System */
+        /* Berger Design System */
         primary: {
           DEFAULT: 'var(--color-primary)',
           foreground: 'var(--color-white)',

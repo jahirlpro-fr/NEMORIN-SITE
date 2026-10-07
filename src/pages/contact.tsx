@@ -12,8 +12,8 @@ export default function ContactPage() {
   return (
     <>
       <SEO
-        title="Contact — Maître Stéphanie NEMORIN"
-        description="Contactez Maître Stéphanie NEMORIN, avocate au Barreau de Paris. Réponse sous 48h ouvrées. Cabinet situé dans le 16ème arrondissement."
+        title="Contact — Maître Anissa BERGER"
+        description="Contactez Maître Anissa BERGER, avocate au Barreau de Paris. Réponse sous 48h ouvrées. Cabinet situé dans le 16ème arrondissement."
       />
 
       {/* Hero Section */}
@@ -57,7 +57,7 @@ export default function ContactPage() {
             {/* Sidebar Info - 1 column */}
             <div className="space-y-6">
               <div className="bg-white border border-border p-6">
-                <h3 className="text-playfair text-xl font-semibold text-navy mb-6">
+                <h3 className="text-playfair text-xl font-semibold text-primary mb-6">
                   Informations pratiques
                 </h3>
 
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                     <div>
-                      <p className="text-dm-sans text-sm font-medium text-navy mb-1">Adresse</p>
+                      <p className="text-dm-sans text-sm font-medium text-primary mb-1">Adresse</p>
                       <p className="text-dm-sans text-sm text-text-muted">
                         {siteConfig.contact.address.street}<br />
                         {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}
@@ -78,7 +78,7 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <Clock className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                     <div>
-                      <p className="text-dm-sans text-sm font-medium text-navy mb-1">Horaires</p>
+                      <p className="text-dm-sans text-sm font-medium text-primary mb-1">Horaires</p>
                       <p className="text-dm-sans text-sm text-text-muted">
                         {siteConfig.contact.hours}<br />
                         <span className="text-xs">(Sur rendez-vous)</span>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                                   <div className="flex items-start gap-3">
                                       <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                                       <div>
-                                          <p className="text-dm-sans text-sm font-medium text-navy mb-1">Email</p>
+                                          <p className="text-dm-sans text-sm font-medium text-primary mb-1">Email</p>
                                           <Link
                                               href="mailto:cabinet@nemorin-avocat.com"
                                               className="text-dm-sans text-sm text-gold hover:text-gold/80 transition-colors block"
@@ -110,7 +110,7 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <Linkedin className="w-5 h-5 text-gold flex-shrink-0 mt-1" strokeWidth={1.5} />
                     <div>
-                      <p className="text-dm-sans text-sm font-medium text-navy mb-1">LinkedIn</p>
+                      <p className="text-dm-sans text-sm font-medium text-primary mb-1">LinkedIn</p>
                       <a
                                               href="https://www.linkedin.com/in/st%C3%A9phanie-nemorin-272495143/"
                         target="_blank"
@@ -126,10 +126,10 @@ export default function ContactPage() {
 
               {/* Response Time Guarantee */}
               <div className="bg-gold/10 border border-gold/30 p-6 text-center">
-                <p className="text-dm-sans text-sm font-semibold text-navy mb-1">
+                <p className="text-dm-sans text-sm font-semibold text-primary mb-1">
                   ⏱️ Réponse garantie
                 </p>
-                <p className="text-dm-sans text-xs text-navy/70">
+                <p className="text-dm-sans text-xs text-primary/70">
                   Sous 48h ouvrées
                 </p>
               </div>

@@ -18,7 +18,7 @@ export const expertises: Expertise[] = [
     description: "Accompagnement des entreprises dans leurs litiges commerciaux et leur stratégie juridique",
     iconName: "Briefcase",
     introduction: [
-      "Le droit des affaires constitue le socle de l'activité entrepreneuriale. Maître NEMORIN accompagne dirigeants et entreprises dans la prévention et la résolution de leurs contentieux commerciaux, avec une approche pragmatique qui allie rigueur juridique et compréhension des réalités économiques.",
+      "Le droit des affaires constitue le socle de l'activité entrepreneuriale. Maître BERGER accompagne dirigeants et entreprises dans la prévention et la résolution de leurs contentieux commerciaux, avec une approche pragmatique qui allie rigueur juridique et compréhension des réalités économiques.",
       "De la négociation amiable à la représentation devant les tribunaux de commerce, notre cabinet intervient à chaque étape pour défendre vos intérêts avec détermination et stratégie.",
     ],
     situations: [
@@ -52,7 +52,7 @@ export const expertises: Expertise[] = [
     description: "Assistance et représentation en matière pénale économique et financière",
     iconName: "Scale",
     introduction: [
-      "Le droit pénal des affaires requiert une expertise pointue et une disponibilité sans faille. Maître NEMORIN défend dirigeants, cadres et entreprises dans les procédures pénales économiques avec discrétion, stratégie et pugnacité.",
+      "Le droit pénal des affaires requiert une expertise pointue et une disponibilité sans faille. Maître BERGER défend dirigeants, cadres et entreprises dans les procédures pénales économiques avec discrétion, stratégie et pugnacité.",
       "De la garde à vue à l'audience correctionnelle, notre cabinet assure une présence constante à vos côtés, avec une parfaite maîtrise des enjeux juridiques et réputationnels.",
     ],
     situations: [
@@ -87,7 +87,7 @@ export const expertises: Expertise[] = [
     description: "Conseil et contentieux en droit des sociétés, de la création à la transmission",
     iconName: "Building",
     introduction: [
-      "Le droit des sociétés accompagne la vie de l'entreprise, de sa création à sa transmission. Maître NEMORIN conseille dirigeants et associés dans leurs choix stratégiques et intervient en cas de conflits internes avec pragmatisme et efficacité.",
+      "Le droit des sociétés accompagne la vie de l'entreprise, de sa création à sa transmission. Maître BERGER conseille dirigeants et associés dans leurs choix stratégiques et intervient en cas de conflits internes avec pragmatisme et efficacité.",
       "Notre cabinet maîtrise l'ensemble des formes sociétaires (SAS, SARL, SA, SCI) et intervient tant en conseil qu'en contentieux pour sécuriser vos opérations et résoudre vos litiges.",
     ],
     situations: [
@@ -122,7 +122,7 @@ export const expertises: Expertise[] = [
     description: "Sécurisation juridique de vos relations contractuelles",
     iconName: "FileText",
     introduction: [
-      "Le contrat est l'outil juridique central de toute relation d'affaires. Maître NEMORIN accompagne entreprises et professionnels dans la négociation, la rédaction et l'exécution de leurs contrats, avec une exigence de précision et d'efficacité.",
+      "Le contrat est l'outil juridique central de toute relation d'affaires. Maître BERGER accompagne entreprises et professionnels dans la négociation, la rédaction et l'exécution de leurs contrats, avec une exigence de précision et d'efficacité.",
       "En cas de litige, notre cabinet défend vos intérêts avec détermination, que ce soit devant les tribunaux ou dans le cadre de négociations amiables.",
     ],
     situations: [
@@ -156,7 +156,7 @@ export const expertises: Expertise[] = [
     description: "Accompagnement juridique dans vos opérations et litiges immobiliers",
     iconName: "Home",
     introduction: [
-      "Le droit immobilier régit un secteur aux enjeux économiques majeurs. Maître NEMORIN conseille professionnels et entreprises dans leurs opérations immobilières et les représente en cas de litiges, avec une connaissance approfondie des spécificités du droit immobilier commercial.",
+      "Le droit immobilier régit un secteur aux enjeux économiques majeurs. Maître BERGER conseille professionnels et entreprises dans leurs opérations immobilières et les représente en cas de litiges, avec une connaissance approfondie des spécificités du droit immobilier commercial.",
       "Notre cabinet intervient à tous les stades : acquisition, location, exploitation, cession, et règlement des contentieux.",
     ],
     situations: [
@@ -191,7 +191,7 @@ export const expertises: Expertise[] = [
     description: "Défense et conseil en matière bancaire, financière et de crédit",
       iconName: "Euro",
     introduction: [
-      "Le droit bancaire et financier est un domaine technique qui exige une parfaite maîtrise des mécanismes juridiques et économiques. Forte de son expérience auprès d'institutionnels bancaires, Maître NEMORIN accompagne entreprises et dirigeants dans leurs relations avec les établissements financiers.",
+      "Le droit bancaire et financier est un domaine technique qui exige une parfaite maîtrise des mécanismes juridiques et économiques. Forte de son expérience auprès d'institutionnels bancaires, Maître BERGER accompagne entreprises et dirigeants dans leurs relations avec les établissements financiers.",
       "Notre cabinet intervient en conseil comme en contentieux pour défendre vos intérêts face aux banques et sécuriser vos opérations de financement.",
     ],
     situations: [

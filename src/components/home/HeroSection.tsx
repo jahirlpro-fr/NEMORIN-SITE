@@ -60,7 +60,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="font-body font-light text-white/80 text-lg max-w-2xl leading-relaxed"
             >
-              Maître Stéphanie NEMORIN accompagne dirigeants et entreprises avec rigueur et discrétion, en français, anglais et espagnol.
+              Maître Anissa BERGER accompagne dirigeants et entreprises avec rigueur et discrétion, en français, anglais et espagnol.
             </motion.p>
 
             {/* CTAs */}

@@ -26,7 +26,7 @@ const reasons = [
   },
 ];
 
-export function WhyNemorin() {
+export function WhyBerger() {
   return (
     <section className="bg-bg py-section-mobile md:py-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

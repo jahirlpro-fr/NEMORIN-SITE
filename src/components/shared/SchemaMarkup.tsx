@@ -39,7 +39,7 @@ export function SchemaMarkup() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Stéphanie NEMORIN",
+    "name": "Anissa BERGER",
     "jobTitle": "Avocate au Barreau de Paris",
     "url": siteConfig.url,
     "worksFor": {

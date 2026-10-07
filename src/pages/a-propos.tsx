@@ -51,8 +51,8 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="À propos — Maître Stéphanie NEMORIN, Avocate Paris"
-        description="Maître Stéphanie NEMORIN, avocate au Barreau de Paris depuis 2019 (toque E1119). Double Master 2 en Droit des sociétés et Droit pénal des affaires. Expertise bancaire et financière."
+        title="À propos — Maître Anissa BERGER, Avocate Paris"
+        description="Maître Anissa BERGER, avocate au Barreau de Paris depuis 2019 (toque E1119). Double Master 2 en Droit des sociétés et Droit pénal des affaires. Expertise bancaire et financière."
       />
 
       {/* Hero Section */}
@@ -80,7 +80,7 @@ export default function AboutPage() {
             >
               <div>
                 <span className="label-caps text-gold-light mb-3 block">
-                  MAÎTRE STÉPHANIE NEMORIN
+                  MAÎTRE ANISSA BERGER
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold text-white leading-tight mb-6">
                   Avocate au Barreau de Paris depuis 2019
@@ -88,11 +88,11 @@ export default function AboutPage() {
               </div>
 
               <p className="font-body text-lg text-white/90 leading-relaxed">
-                Maître Stéphanie NEMORIN est avocate au Barreau de Paris depuis mars 2019 (toque E1119). Titulaire d'un double Master 2 en Droit des sociétés et en Droit pénal des affaires, elle a bâti son expertise au sein de cabinets parisiens de référence, notamment auprès d'institutionnels de la sphère bancaire et financière.
+                Maître Anissa BERGER est avocate au Barreau de Paris depuis mars 2019 (toque E1119). Titulaire d'un double Master 2 en Droit des sociétés et en Droit pénal des affaires, elle a bâti son expertise au sein de cabinets parisiens de référence, notamment auprès d'institutionnels de la sphère bancaire et financière.
               </p>
 
               <p className="font-body text-lg text-white/80 leading-relaxed">
-                Rigoureuse, disponible et trilingue, Maître NEMORIN s'engage personnellement dans chaque dossier avec discrétion et efficacité.
+                Rigoureuse, disponible et trilingue, Maître BERGER s'engage personnellement dans chaque dossier avec discrétion et efficacité.
               </p>
             </motion.div>
           </div>

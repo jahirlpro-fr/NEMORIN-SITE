@@ -48,7 +48,7 @@ export default function CabinetPage() {
   return (
     <>
       <SEO
-        title="Le Cabinet — Maître Stéphanie NEMORIN"
+        title="Le Cabinet — Maître Anissa BERGER"
         description="Cabinet d'avocats à taille humaine à Paris. Honoraires transparents, confidentialité absolue, interlocuteur unique pour chaque dossier."
       />
 
@@ -68,7 +68,7 @@ export default function CabinetPage() {
                           Un Cabinet à Taille Humaine au Cœur de Paris
                       </h1>
                       <p className="font-body text-lg md:text-xl text-white/80 leading-relaxed">
-              Maître Stéphanie NEMORIN vous accompagne personnellement, du premier rendez-vous jusqu'à la résolution de votre dossier, avec rigueur, discrétion et disponibilité.
+              Maître Anissa BERGER vous accompagne personnellement, du premier rendez-vous jusqu'à la résolution de votre dossier, avec rigueur, discrétion et disponibilité.
             </p>
           </motion.div>
         </div>
@@ -109,7 +109,7 @@ export default function CabinetPage() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <h3 className="text-playfair text-2xl font-semibold text-navy mb-3">
+                  <h3 className="text-playfair text-2xl font-semibold text-primary mb-3">
                     {item.title}
                   </h3>
                   <p className="text-dm-sans text-text-muted leading-relaxed">
@@ -147,7 +147,7 @@ export default function CabinetPage() {
                     className="bg-white p-8 border border-border hover:border-gold transition-all duration-300"
                   >
                     <Icon className="w-12 h-12 text-gold mb-4" strokeWidth={1.5} />
-                    <h3 className="text-playfair text-xl font-semibold text-navy mb-3">
+                    <h3 className="text-playfair text-xl font-semibold text-primary mb-3">
                       {option.title}
                     </h3>
                     <p className="text-dm-sans text-text-muted leading-relaxed">
@@ -165,7 +165,7 @@ export default function CabinetPage() {
               transition={{ delay: 0.4 }}
               className="mt-10 max-w-3xl mx-auto bg-gold/10 border border-gold/30 p-6 text-center"
             >
-              <p className="text-dm-sans text-navy font-medium">
+              <p className="text-dm-sans text-primary font-medium">
                 ⚖️ Une convention d'honoraires est systématiquement signée avant toute intervention
               </p>
             </motion.div>
@@ -200,7 +200,7 @@ export default function CabinetPage() {
                   className="p-6 bg-bg-alt border border-border"
                 >
                   <span className="text-4xl text-gold mb-2 block">{method.icon}</span>
-                  <p className="text-dm-sans text-navy font-medium">{method.label}</p>
+                  <p className="text-dm-sans text-primary font-medium">{method.label}</p>
                 </motion.div>
               ))}
             </div>
@@ -228,7 +228,7 @@ export default function CabinetPage() {
                 className="bg-white p-8 border border-border"
               >
                 <MapPin className="w-10 h-10 text-gold mb-4" strokeWidth={1.5} />
-                <h3 className="text-playfair text-xl font-semibold text-navy mb-3">
+                <h3 className="text-playfair text-xl font-semibold text-primary mb-3">
                   France Entière
                 </h3>
                 <p className="text-dm-sans text-text-muted leading-relaxed">
@@ -245,7 +245,7 @@ export default function CabinetPage() {
                 <svg className="w-10 h-10 text-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <h3 className="text-playfair text-xl font-semibold text-navy mb-3">
+                <h3 className="text-playfair text-xl font-semibold text-primary mb-3">
                   International
                 </h3>
                 <p className="text-dm-sans text-text-muted leading-relaxed">
@@ -284,7 +284,7 @@ export default function CabinetPage() {
                         <div className="inline-flex items-center justify-center mb-6">
                             <Icon className="w-10 h-10 text-gold" strokeWidth={1} />
                         </div>
-                    <h3 className="text-playfair text-xl font-semibold text-navy mb-3">
+                    <h3 className="text-playfair text-xl font-semibold text-primary mb-3">
                       {value.title}
                     </h3>
                     <p className="text-dm-sans text-text-muted leading-relaxed">
@@ -308,10 +308,10 @@ export default function CabinetPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-cormorant text-3xl md:text-4xl font-semibold text-navy mb-4">
+            <h2 className="text-cormorant text-3xl md:text-4xl font-semibold text-primary mb-4">
               Parlons de Votre Situation
             </h2>
-            <p className="text-dm-sans text-navy/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-dm-sans text-primary/80 mb-8 max-w-2xl mx-auto">
               Contactez-nous pour un premier échange confidentiel et sans engagement.
             </p>
             <Button href="/contact" variant="secondary">

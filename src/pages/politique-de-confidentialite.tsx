@@ -4,22 +4,22 @@ export default function PolitiqueConfidentialite() {
   return (
     <>
       <SEO 
-        title="Politique de Confidentialité — Cabinet Maître NEMORIN" 
-        description="Politique de confidentialité et protection des données personnelles du cabinet de Maître Stéphanie NEMORIN."
+        title="Politique de Confidentialité — Cabinet Maître BERGER" 
+        description="Politique de confidentialité et protection des données personnelles du cabinet de Maître Anissa BERGER."
       />
       <div className="pt-32 pb-20 px-4 max-w-4xl mx-auto">
-        <h1 className="font-serif text-4xl md:text-5xl text-navy mb-8">Politique de Confidentialité</h1>
+        <h1 className="font-serif text-4xl md:text-5xl text-primary mb-8">Politique de Confidentialité</h1>
         
-        <div className="space-y-8 text-dm-sans text-navy/80">
+        <div className="space-y-8 text-dm-sans text-primary/80">
           <section>
-            <h2 className="font-serif text-2xl text-navy mb-4">1. Données collectées</h2>
+            <h2 className="font-serif text-2xl text-primary mb-4">1. Données collectées</h2>
             <p>
-              Dans le cadre de son activité, Maître Stéphanie NEMORIN est amenée à collecter et traiter des données à caractère personnel vous concernant. Les données collectées via le formulaire de contact incluent : nom, prénom, adresse email, numéro de téléphone (optionnel), et les informations contenues dans votre message.
+              Dans le cadre de son activité, Maître Anissa BERGER est amenée à collecter et traiter des données à caractère personnel vous concernant. Les données collectées via le formulaire de contact incluent : nom, prénom, adresse email, numéro de téléphone (optionnel), et les informations contenues dans votre message.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-navy mb-4">2. Finalités et base légale du traitement</h2>
+            <h2 className="font-serif text-2xl text-primary mb-4">2. Finalités et base légale du traitement</h2>
             <p>
               Les données sont collectées pour :
             </p>
@@ -34,14 +34,14 @@ export default function PolitiqueConfidentialite() {
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-navy mb-4">3. Durée de conservation</h2>
+            <h2 className="font-serif text-2xl text-primary mb-4">3. Durée de conservation</h2>
             <p>
               Les données liées aux demandes de contact n'ayant pas abouti à l'ouverture d'un dossier sont conservées pendant un délai maximum de 3 ans. Les données liées aux dossiers clients sont conservées pendant la durée de la relation contractuelle augmentée des délais de prescription légale applicables.
             </p>
           </section>
 
           <section>
-            <h2 className="font-serif text-2xl text-navy mb-4">4. Droits des utilisateurs</h2>
+            <h2 className="font-serif text-2xl text-primary mb-4">4. Droits des utilisateurs</h2>
             <p>
               Conformément à la réglementation applicable (RGPD), vous disposez d'un droit d'accès, de rectification, de portabilité, d'effacement de vos données personnelles, ainsi que d'un droit à la limitation et d'opposition à leur traitement.
               <br /><br />

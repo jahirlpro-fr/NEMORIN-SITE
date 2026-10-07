@@ -42,7 +42,7 @@ export function StatsSection() {
   return (
     <section className="relative py-section-mobile md:py-section overflow-hidden">
       {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary to-[#1a2d45]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary to-[#5E1B28]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">

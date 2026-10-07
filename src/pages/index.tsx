@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/home/HeroSection";
 import { TrustBadges } from "@/components/home/TrustBadges";
-import { WhyNemorin } from "@/components/home/WhyNemorin";
+import { WhyBerger } from "@/components/home/WhyBerger";
 import { ExpertisePreview } from "@/components/home/ExpertisePreview";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { StatsSection } from "@/components/home/StatsSection";
@@ -14,7 +14,7 @@ export default function HomePage() {
       <HeroSection />
       <TrustBadges />
       <GoldDivider />
-      <WhyNemorin />
+      <WhyBerger />
       <GoldDivider />
       <ExpertisePreview />
       <GoldDivider />

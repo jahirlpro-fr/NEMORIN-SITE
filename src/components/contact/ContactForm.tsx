@@ -68,7 +68,7 @@ export function ContactForm() {
   };
 
   const inputClasses = "w-full px-4 py-3 border border-border bg-white focus:border-gold focus:outline-none transition-colors text-dm-sans";
-  const labelClasses = "block text-sm font-medium text-navy mb-2 text-dm-sans";
+  const labelClasses = "block text-sm font-medium text-primary mb-2 text-dm-sans";
 
   return (
     <div className="bg-white border border-border p-8 md:p-10">
@@ -88,7 +88,7 @@ export function ContactForm() {
             >
               <CheckCircle className="w-16 h-16 text-green-600 mx-auto mb-4" strokeWidth={1.5} />
             </motion.div>
-            <h3 className="text-cormorant text-2xl font-semibold text-navy mb-2">
+            <h3 className="text-cormorant text-2xl font-semibold text-primary mb-2">
               Message envoyé avec succès
             </h3>
             <p className="text-dm-sans text-text-muted mb-6">
@@ -295,7 +295,7 @@ export function ContactForm() {
               transition={{ delay: 0.56 }}
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold py-4 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-gold hover:bg-gold/90 text-primary font-semibold py-4 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {isSubmitting ? (
                 <>

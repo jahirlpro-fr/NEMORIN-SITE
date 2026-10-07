@@ -11,7 +11,7 @@ export default function ExpertisesPage() {
   return (
     <>
       <SEO
-        title="Nos Domaines d'Expertise — Maître Stéphanie NEMORIN"
+        title="Nos Domaines d'Expertise — Maître Anissa BERGER"
         description="Expertise complète en droit des affaires : contentieux commercial, droit pénal des affaires, droit des sociétés, droit des contrats, droit immobilier, droit bancaire et financier."
       />
 

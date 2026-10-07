@@ -49,7 +49,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex flex-col group">
             <span className="font-display text-2xl font-semibold text-gold">
-              NEMORIN
+              BERGER
             </span>
             <span className={`label-caps text-[0.65rem] transition-colors ${
               isScrolled ? "text-gold-light opacity-80" : "text-primary opacity-70"

@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: "Cabinet Maître Stéphanie NEMORIN",
-  legalName: "Maître Stéphanie NEMORIN",
+  name: "Cabinet Maître Anissa BERGER",
+  legalName: "Maître Anissa BERGER",
   title: "Avocate au Barreau de Paris",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://nemorin-avocat.fr",
   description: "Cabinet d'avocats à Paris 16e spécialisé en droit des affaires, droit pénal des affaires, droit des sociétés et droit immobilier.",
@@ -59,8 +59,8 @@ export const siteConfig = {
   },
   
   seo: {
-    title: "Maître Stéphanie NEMORIN — Avocate au Barreau de Paris",
-    titleTemplate: "%s | Maître Stéphanie NEMORIN",
+    title: "Maître Anissa BERGER — Avocate au Barreau de Paris",
+    titleTemplate: "%s | Maître Anissa BERGER",
     description: "Avocate au Barreau de Paris spécialisée en droit des affaires, droit pénal des affaires et droit des sociétés. Cabinet à Paris 16ème, accompagnement en français, anglais et espagnol.",
     keywords: [
       "avocat droit des affaires Paris",

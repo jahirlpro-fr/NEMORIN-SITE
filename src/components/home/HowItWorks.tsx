@@ -30,7 +30,7 @@ export function HowItWorks() {
   return (
     <section className="bg-primary text-white py-section-mobile md:py-section relative overflow-hidden">
       {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary to-[#1a2d45] opacity-60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-primary via-primary to-[#5E1B28] opacity-60" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <SectionTitle
